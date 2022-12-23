@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" class="form">
+        <h1><u>Payment Form</u></h1>
+        
+        <h2><u>Contact Information</u></h2>
+        <h4>All field marks with <a>*</a> are required</h4>
+        <div class="form-1">
+        <p>Name<a>*</a>:<input type="text" name="name" required placeholder="Madhur Kumar" required></p>
+        <fieldset>
+            <legend>
+                Gender<a>*</a>
+            </legend>
+            <p>
+                Male<input type="radio" name="gender" id="male" required>
+                Female<input type="radio" name="gender" id="female" required>
+                </p>
+        </fieldset>
+        <p>Address:<textarea name="address" id="address" cols="52" rows="4" placeholder="H.no:57,IIT BHU Varanasi" ></textarea></p>
+        <p>Email<a>*</a>:<input type="email" name="emai" id="email" placeholder="madhur4041@gmail.com"  required ></p>
+        <p>Pincode: <input type="number" name="pincode" id="pincode"></p>
+    </div>
+        <hr>
+
+        <h2><u>Payment Information</u></h2>
+        <div class="form-2">
+        <p>Card Type<a>*</a>:
+            <select name="Card_Type" id="card_type" required>
+                <option value="">__Select a Card Type__</option>
+                <option value="Visa">Visa</option>
+                <option value="Rupay">Rupay</option>
+                <option value="MasterCard">MasterCard</option>
+            </select>
+        </p>
+        <p>
+            Card Number<a>*</a>: <input type="number" name="card_number" id="card_number" required>
+        </p>
+        <div class="form-2-1">
+        <p>
+            Expiration Date<a>*</a>: <input type="date" name="exp_date" id="exp_date" required>
+        </p>
+        <p>
+            CVV<a>*</a>: <input type="password" name="cvv" id="cvv" required>
+        </p>
+    </div>
+    <div class="buton">
+        <button type="submit">Submit</button>
+    </div>
+        </div>
+        
+
+    </form>
+    
+</body>
+</html>
